@@ -16,7 +16,7 @@ export default function SimpleCompo() {
     return (
         <>
             <p>
-                {users}
+                {users && JSON.stringify(users[0])}
             </p>
             {/* <Count1 />
             <br />

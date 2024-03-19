@@ -8,8 +8,6 @@ export default function useFetchUsers(url) {
             const userData = await axios.get(url).catch((error) => console.log(error.message))
             if (userData) {
                 setUsers(userData.data)
-            } else {
-                setUsers("no data found")
             }
         }
         getUsers()
