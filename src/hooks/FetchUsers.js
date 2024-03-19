@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
-export default function useFetchUsers(url) {
+export default function FetchUsers(url) {
     const [users, setUsers] = useState()
     useEffect(() => {
         const getUsers = async () => {

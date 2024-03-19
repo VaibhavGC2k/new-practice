@@ -9,9 +9,9 @@ function App() {
     <>
       <div className='App'>
         <h2>OTP</h2>
-        {/* <SimpleCompo/> */}
+        <SimpleCompo/>
         {/* <Clock /> */}
-        <OtpInput/>
+        {/* <OtpInput/> */}
       </div>
     </>
   );

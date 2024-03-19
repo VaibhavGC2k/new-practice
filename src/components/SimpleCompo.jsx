@@ -4,19 +4,18 @@ import Count2 from './Count2';
 import useUpdateDocument from '../hooks/useUpdateDocument';
 import useMousePosition from '../hooks/useMousePosition';
 import useCounter from '../hooks/useCounter';
-import useFetchUsers from '../hooks/useFetchUsers';
+import FetchUsers from '../hooks/FetchUsers';
 
 
 export default function SimpleCompo() {
 
     // useUpdateDocument(count1);
     //    useMousePosition()
-    const users = useFetchUsers(`https://jsonplaceholder.typicode.com/users`)
-    console.log("this is simple compo ", users)
+    const users = FetchUsers(`https://jsonplaceholder.typicode.com/users`)
     return (
         <>
             <p>
-                {users && JSON.stringify(users[0])}
+                {users && JSON.stringify(users)}
             </p>
             {/* <Count1 />
             <br />
