@@ -4,7 +4,7 @@ import Count2 from './Count2';
 import useUpdateDocument from '../hooks/useUpdateDocument';
 import useMousePosition from '../hooks/useMousePosition';
 import useCounter from '../hooks/useCounter';
-import FetchUsers from '../hooks/FetchUsers';
+import FetchUsers from '../hooks/fetchUsers';
 
 
 export default function SimpleCompo() {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export default function useClock() {
+export default function Clock() {
     const [time, setTime] = useState(0)
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -8,5 +8,5 @@ export default function useClock() {
         }, 1000);
         return () => clearInterval(intervalId)
     }, [])
-    return time
+    return <h1>Hello</h1>
 }
